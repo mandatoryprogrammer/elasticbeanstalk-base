@@ -1,0 +1,8 @@
+version: '3'
+services:
+    example:
+        build: ./project/
+        environment:
+            - EXTERNAL_URL=https://www.google.com/robots.txt
+        ports:
+            - "80:80"
